@@ -1,25 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import { Random } from './components/Random_V1';
+import { Tag_V1 } from './components/Tag_V1';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <h1>Random GIF Application</h1>
+      <div className='main-container'>
+        <Random />
+        <Tag_V1 />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
