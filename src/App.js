@@ -1,6 +1,6 @@
 import './App.css';
-import { Random } from './components/Random_V1';
-import { Tag_V1 } from './components/Tag_V1';
+import { Random } from './components/RandomV1';
+import { TagV1 } from './components/TagV1';
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
       <h1>Random GIF Application</h1>
       <div className='main-container'>
         <Random />
-        <Tag_V1 />
+        <TagV1 />
       </div>
     </div>
   );
