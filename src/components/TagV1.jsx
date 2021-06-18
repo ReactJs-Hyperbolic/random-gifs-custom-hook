@@ -21,15 +21,15 @@ export const TagV1 = () => {
 
     useEffect(() => {
         fetchGif('dogs');
-    }, []);
+    }, [tag]);
 
     return (
         <>
             <div className='container'>
-                <h1>Random {tag} Gif</h1>
+                <h1>Search {tag} Gif</h1>
                 <img src={gif} width='500' alt="random_gif" />
                 <input type="text" value={tag} onChange={(e) => setTag(e.target.value)} />
-                <button onClick={handleClick}>New Random Gif</button>
+                <button onClick={handleClick}>Search Gif</button>
             </div>            
         </>
     )
